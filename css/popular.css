@@ -1,0 +1,155 @@
+
+.wrapper >.main{
+    width: 80%;
+    min-width: 992px;
+    margin-top: 3em;
+}
+
+.wrapper >.main .selectionBar{
+    background-color: #26a69a;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.wrapper >.main .selectionBar .arrangement{
+    height: 48px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.wrapper >.main .selectionBar .arrangement i{
+    color: white;
+    transition: color 0.5s ease;
+}
+
+#movie,#tv,#person{
+    position: relative;
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+#movie >a ,#tv >a ,#person>a{
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -20px;
+}
+.card{
+    position: relative;
+    overflow-y: hidden;
+    width: 22.5%;
+}
+ .card-show,.card .card-title{
+
+    padding: 10px 32px;
+    line-height: 1;
+}
+.card .card-title span{
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1;
+}
+.card .card-title{
+    font-size: 22px;
+}
+.card .card-title span >i{
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -12px;
+}
+.card-show p{
+    margin: 1em 0em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+    line-height: 2;
+    min-height: 90px;
+}
+
+.card .card-url{
+    padding: 8px 32px;
+    border-top: 1px  solid #d6d5e2;
+    position: relative;
+    bottom: 0px;
+}
+.card .card-url p{
+    margin: 0px;
+}
+.card .card-img >img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.card.headline{
+    display: flex;
+    width: 100%;
+}
+.card.headline .card-img {
+    width: 30%;
+}
+.card.headline >div:last-child{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .card-show{
+    width: 100%;
+    flex-grow: 2;
+    z-index: 9;
+    position: absolute;
+    background-color: white;
+
+}
+.card.headline .card-show{
+    position: relative;
+    height: 130px;
+}
+.card .card-show span{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card.headline.card-show P{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.headline .card-show span i{
+    display: none;
+}
+#person.card .card-show p{
+
+}
+.card .card-show p>span{
+    display: block;
+    font-size: 16px;
+}
+.card-show p> span:hover{
+    text-decoration: underline;
+    color: #26A69A;
+}
+#person .card.headline .card-img{
+    width: 15%;
+}
+#person .card.headline >div:last-child{
+    width: 85%;
+}
+.wrapper .up.btn-floating{
+    position: fixed;
+    right: 12px;
+    bottom: 12px;
+}

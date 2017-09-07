@@ -1,0 +1,68 @@
+
+div.img>img{
+    display: block;
+    width: 100%;
+}
+h1, h2,h3,h4, h5, h6{
+    text-transform: capitalize;
+}
+div#results {
+    width: 80% !important;
+    margin: 2em auto;
+}
+div#results .collection.with-header .collection-item.avatar {
+    padding-left: 150px;
+}
+div#results .collection .collection-item.avatar:not(.circle-clipper) > .circle {
+    top:50%;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+}
+div#results  .collection-header{
+    color: #26A69A;
+}
+
+div#results .collection .collection-item.avatar{
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+div#results .collection .collection-item.avatar .title {
+    font-size: 20px;
+    padding: 20px 70px 20px 0px ;
+    width: 100%;
+}
+div#results .collection .collection-item.avatar:hover .title{
+    color: #4ACAA8;
+}
+div#results .collection .collection-item.avatar p{
+    line-height: 2;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    display: -webkit-box;
+    margin-bottom: 20px;
+}
+div#results .collection .collection-item.avatar a{
+    font-size: 24px;
+}
+div.wrapper > a.btn{
+    display: block;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    margin: 2em 0em;
+}
+div.wrapper > a.up{
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}

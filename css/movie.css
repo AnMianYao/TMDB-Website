@@ -1,0 +1,230 @@
+
+
+div.img>img{
+    display: block;
+    width: 100%;
+}
+.main h1,.main h2,.main h3,.main h4,.main h5,.main h6{
+    text-transform: capitalize;
+}
+.main section{
+    margin-bottom: 5px;
+    background-color: #fff;
+    padding: 2em 0em;
+}
+.main  section h2{
+    text-align: center;
+    color: #777777;
+    z-index: 9;
+}
+.main  section h2:hover{
+    color: rgba(13,173,168,1);
+}
+.main  section p{
+    text-align: justify;
+    text-indent: 2em;
+    text-align-last: left;
+}
+.main #brief {
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.main .bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+.main .bg img{
+    display: block;
+    width: 100%;
+    z-index: -99;
+    height: 100%;
+    filter: blur(3px) sepia(100%) brightness(50%);
+}
+
+.main #brief .filmCard{
+    background-color: transparent;
+    color: #fff;
+    width: 80%;
+    max-height: 90%;
+    z-index: 99;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+}
+.main #brief div#container{
+    flex-grow: 2;
+}
+.main #brief .filmCard >.img{
+    width: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-height: 500px;
+    overflow: hidden;
+    margin-right: 2em;
+}
+.main #brief .collapsible-header {
+    background-color: transparent;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+.main .collapsible-body,.main .collapsible-header{
+    border: none;
+}
+.main #brief .collapsible-header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.main #credits .carousel a .character{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: center;
+    text-overflow:ellipsis ;
+    overflow: hidden;
+
+ }
+.main #similar >div.similarDiv{
+    width: 90%;
+    margin: auto;
+
+
+}
+.main #similar >div .similarFilm{
+
+    width: 80%;
+    margin: 2em auto;
+    padding: 1em;
+    overflow: hidden;
+   box-shadow: 2px 2px 5px #777777;
+}
+.main #similar >div .similarFilm:hover{
+    box-shadow: 4px 4px 20px #777777;
+}
+.main #similar >div .similarFilm  img{
+    width: 20%;
+    min-height: 80%;
+    display: inline-block;
+    float: left;
+    margin-right: 1em ;
+    clear: both;
+
+}
+.main #similar .similarFilm  span {
+    display: inline-block;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #26A69A;
+    text-align: right;
+}
+.main #similar .similarFilm p{
+    text-indent: 0em;
+    line-height: 2;
+    margin: 0em;
+}
+.main #similar .similarFilm p::first-letter{
+    font-size: 1.5em;
+}
+.main #similar .similarFilm >a:hover{
+    color:#26A69A;
+    text-indent: 2em;
+    line-height: 2;
+}
+.main #reviews ul {
+    width: 90%;
+    margin: 1em auto;
+}
+.main #reviews ul li{
+    padding: 1em 2em ;
+    border: 1px solid #f5f5f5 ;
+    box-shadow: 2px 2px 3px #f5f5f5;
+    margin-bottom: 2em;
+}
+.main #reviews ul li:hover{
+    box-shadow: 0 0 20px #26a69a;
+}
+.main #reviews ul li:hover h5{
+    color: rgba(38,166,154,1);
+}
+#gallery{
+    background-color: #f5f5f5;
+    padding: 2em 0em;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+#gallery >div.itemsContainer{
+   min-width: 100%;
+    position: relative;
+    left: 0%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#gallery >div.icon{
+    z-index: 99;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+}
+#gallery >div.icon:hover{
+    background-color: rgba(38, 166, 154, 0.5);
+}
+#gallery >div.icon >i{
+    color: #fff;
+    display: block;
+    height: 58px;
+    top: 21px;
+    position: relative;
+}
+#gallery >div.Left{
+    left: -50px;
+    flex-direction: row-reverse;
+ }
+#gallery >div.Right{
+    right:  -50px;
+
+}
+#gallery .item{
+    max-width: 250px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    background-color: #fff;
+
+}
+#gallery .item:last-child{
+    margin-right: 0em;
+}
+#gallery .item h6{
+    font-weight: bolder;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: 2;
+ }
+div.wrapper > a.up{
+    display: block;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}

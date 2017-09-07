@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" name="view" content="width=device-width, initial-scale =1.0">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/base.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/person.css"  media="screen,projection"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <title>Person</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li data-f="movie"><a href="Favorite.html">Favorite Movies</a> </li>
+            <li data-f="tv"><a href="Favorite.html">Favorite TV Shows</a> </li>
+
+        </ul>
+
+        <nav class="header">
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo">TMDB</a>
+                <ul class="right hide-on-small-only">
+                    <li><a href="Popular.html">popular </a></li>
+                    <li><a href="Discovery.html">discovery </a></li>
+                    <li id="login"><a href="#">login</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li id="me" class="hide"><a class="dropdown-button" href="#" data-activates="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+
+    <div class="main">
+
+        <div class="content">
+
+            <div class="personBg"><img ></div>
+
+            <section id="about">
+                <h2>Biography</h2>
+                <p></p>
+
+            </section>
+            <section id="personInformation">
+                <h2>Person Information</h2>
+                <div class="info">
+                    <div class="img hoverable"><img  src="imgs/poster.jpg"></div>
+                    <div>
+                        <div class="row">
+                            <div class="col s6"><i class="fa fa-2x fa-venus-mars"></i><span class="gender"></span></div>
+                            <div class="col s6"><i class="fa fa-2x fa-birthday-cake"></i><span class="birthday"></span> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s6"><i class="fa fa-2x fa-map-marker"></i><span class="placeOfBirth"></span> </div>
+                            <div class="col s6"><i class="fa fa-2x fa-exchange"></i><span class="anotherName"></span> </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s6"><i class="fa fa-2x fa-internet-explorer"></i><span class="homepage">http://goole.com</span> </div>
+                            <div class="col s6"><i class="fa fa-2x fa-heart"></i><span class="popularity">3.44444 </span> </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="knowFor">
+                <h2>know for</h2>
+                <ul ></ul>
+            </section>
+            <section id="acting">
+                <h2>Acting</h2>
+                <ul>
+                    <!--
+                    <li>
+                        <div class="time">2017</div>
+                        <div class="works">
+                            <div class="chip">
+                                <img src="imgs/poster.jpg" alt="Contact Person">
+                                Jane Doe
+                            </div>
+                            <div class="chip">
+                                <img src="imgs/poster.jpg" alt="Contact Person">
+                                Pirates of the Caribbean: Dead Men Tell No Tales
+                            </div>
+
+                            <div class="chip">
+                                <img src="imgs/poster.jpg" alt="Contact Person">
+                                Pirates of the Caribbean: Dead Men Tell No Tales
+                            </div>
+                        </div>
+                    </li>
+                   -->
+
+                </ul>
+                <a class="waves-effect waves-light btn">more</a>
+            </section>
+        </div>
+        <div class="rightBar">
+            <div class="button valign-wrapper"><i class="material-icons ">menu</i></div>
+            <img>
+            <h4></h4>
+            <div class="collection">
+                <a href="#about" class="collection-item ">About</a>
+                <a href="#personInformation" class="collection-item ">Person Information</a>
+                <a href="#knowFor" class="collection-item">Know For</a>
+                <a href="#acting" class="collection-item">Acting</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="loginCover hide">
+        <div class="login valign-wrapper">
+            <i class="material-icons Close">close</i>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="username" type="text" class="validate">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password" >password</label>
+                    </div>
+                </div>
+
+                <a class="waves-effect waves-light btn">login</a>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="js/movieDB.js"></script>
+<script src="js/base.js"></script>
+<script src="js/person.js"></script>
+</html>

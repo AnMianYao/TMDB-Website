@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" name="view" content="width=device-width, initial-scale =1.0">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/popular.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/base.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Popular</title>
+</head>
+<body>
+<div class="wrapper">
+
+    <header class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li data-f="movie"><a href="Favorite.html">Favorite Movies</a> </li>
+            <li data-f="tv"><a href="Favorite.html">Favorite TV Shows</a> </li>
+
+        </ul>
+
+        <nav class="header">
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo">TMDB</a>
+                <ul class="right hide-on-small-only">
+                    <li><a href="Popular.html">popular </a></li>
+                    <li><a href="Discovery.html">discovery </a></li>
+                    <li id="login"><a href="#">login</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li id="me" class="hide"><a class="dropdown-button" href="#" data-activates="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+
+    <div class="container main">
+
+        <div class="selectionBar row">
+            <div class="nav-content col s10 ">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#movie">Movies</a></li>
+                    <li class="tab"><a href="#tv">TV Shows</a></li>
+                    <li class="tab "><a href="#person">Person</a></li>
+                </ul>
+
+            </div>
+
+            <div class="col s2 arrangement">
+                <i class="material-icons selected waves-effect waves-light">view_module</i>
+                <i class="material-icons waves-effect waves-light ">view_headline</i>
+
+            </div>
+        </div>
+
+        <div id="movie">
+            <a class="btn-floating blue more"><i class="material-icons">expand_more</i></a>
+        </div>
+        <div id="tv">
+            <a class="btn-floating blue more"><i class="material-icons">expand_more</i></a>
+        </div>
+        <div id="person">
+            <a class="btn-floating blue more"><i class="material-icons">expand_more</i></a>
+        </div>
+
+    </div>
+    <a class="btn-floating btn-large waves-effect waves-light up  teal darken-3 hide"><i class="material-icons">arrow_upward</i></a>
+    <div class="loginCover hide">
+        <div class="login valign-wrapper">
+            <i class="material-icons Close">close</i>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="username" type="text" class="validate">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password" >password</label>
+                    </div>
+                </div>
+
+                <a class="waves-effect waves-light btn">login</a>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="js/movieDB.js"></script>
+<script src="js/base.js"></script>
+<script src="js/popular.js"></script>
+
+</html>

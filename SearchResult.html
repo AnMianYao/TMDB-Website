@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8" name="view" content="width=device-width, initial-scale =1.0">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/base.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/searchResult.css"  media="screen,projection"/>
+    <title>SearchResult </title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="navbar-fixed">
+        <ul id="dropdown1" class="dropdown-content">
+            <li data-f="movie"><a href="Favorite.html">Favorite Movies</a> </li>
+            <li data-f="tv"><a href="Favorite.html">Favorite TV Shows</a> </li>
+
+        </ul>
+
+        <nav class="header">
+            <div class="nav-wrapper">
+                <a href="home.html" class="brand-logo">TMDB</a>
+                <ul class="right hide-on-small-only">
+                    <li><a href="Popular.html">popular </a></li>
+                    <li><a href="Discovery.html">discovery </a></li>
+                    <li id="login"><a href="#">login</a></li>
+                    <!-- Dropdown Trigger -->
+                    <li id="me" class="hide"><a class="dropdown-button" href="#" data-activates="dropdown1">Login<i class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="progress">
+        <div class="indeterminate"></div>
+    </div>
+
+    <div id="results">
+        <ul class="collection with-header hide" id="movie">
+        </ul>
+
+        <ul class="collection with-header hide" id="person">
+        </ul>
+
+        <ul class="collection with-header hide" id="tv">
+        </ul>
+    </div>
+    <a class="waves-effect waves-light btn">more</a>
+    <a class="btn-floating btn-large waves-effect waves-light up indigo darken-4 hide"><i class="material-icons">arrow_upward</i></a>
+
+    <div class="loginCover hide">
+        <div class="login valign-wrapper">
+            <i class="material-icons Close">close</i>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="username" type="text" class="validate">
+                        <label for="username">Username</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password" >password</label>
+                    </div>
+                </div>
+
+                <a class="waves-effect waves-light btn">login</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="js/movieDB.js"></script>
+<script src="js/base.js"></script>
+<script src="js/searchResult.js"></script>
+</html>

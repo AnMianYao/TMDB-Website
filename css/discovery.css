@@ -1,0 +1,118 @@
+
+.wrapper >.main {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+.wrapper >.main .movieList{
+
+    width: 30%;
+    overflow-y: scroll;
+}
+.wrapper >.main .movieReveal{
+    position: relative;
+    width: 70%;
+    max-height: 100%;
+    overflow-y: hidden;
+}
+.wrapper >.main .movieReveal ul{
+    margin: 0px;
+}
+.wrapper >.main .movieReveal .card.sticky-action.scale-in{
+    position: absolute;
+    left: 0px;
+}
+.wrapper >.main .movieReveal .card.sticky-action.scale-out{
+    position: absolute;
+    left: 100%;
+
+}
+
+.wrapper >.main .movieReveal .card .card-image{
+    max-height: 440px;
+}
+.wrapper >.main .movieReveal .card .card-content,.wrapper >.main .movieReveal .card .card-action{
+    padding: 8px 24px;
+}
+.wrapper >.main .card .card-content .card-title{
+    margin-bottom: 0px;
+}
+.wrapper >.main .movieReveal > i{
+    z-index: 9;
+    color: #fff;
+    display: block;
+    position: absolute;
+
+}
+.wrapper >.main .movieReveal  > i.Left{
+    left: -14px;
+    top: 220px;
+    margin-top: -2rem;
+}
+.wrapper >.main .movieReveal  > i.Right{
+    right: 0px;
+    top: 220px;
+    margin-top: -2rem;
+}
+.wrapper >.main .movieReveal  > i.Close{
+    top: 12px;
+    right: 12px;
+}
+.wrapper >.main .movieList .moviesCollection{
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wrapper >.main .movieList .moviesCollection li{
+    margin-bottom: 1em;
+    width: 45%;
+}
+.wrapper >.main .movieList .moviesCollection li.selected {
+    border: 2px solid #26a69a;
+}
+.wrapper >.main .movieList .moviesCollection li img{
+    width: 100%;
+    display: block;
+}
+.wrapper >.main .movieList .container a{
+    display: block;
+    position: relative;
+
+
+}
+.wrapper >.main .movieReveal .card.sticky-action .card-reveal{
+    z-index: 99;
+}
+.wrapper >.main .movieReveal .card.sticky-action .card-reveal i.right {
+
+    right: 45px;
+    top: 12px;
+    position: relative;
+    z-index: 2
+}
+
+.wrapper >.main .movieReveal .card-reveal ul li{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 1em;
+}
+.wrapper >.main .movieReveal .card-reveal ul li>span:last-child{
+    text-align: justify;
+    flex-grow: 2;
+    font-size: 0.8em;
+    padding-left: 0px;
+}
+.wrapper >.main .movieReveal .card-reveal ul li>span:first-child{
+    flex-shrink: 0;
+    display: inline-block;
+    font-weight: bolder;
+    width: 35%;
+
+    text-transform: capitalize;
+    color: #063f48;
+}
